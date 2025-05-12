@@ -1,0 +1,104 @@
+R version 4.4.0 (2024-04-24)
+Platform: x86_64-pc-linux-gnu
+Running under: AlmaLinux 8.10 (Cerulean Leopard)
+
+Matrix products: default
+BLAS/LAPACK: FlexiBLAS NETLIB;  LAPACK version 3.11.0
+
+locale:
+ [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C               LC_TIME=en_US.UTF-8       
+ [4] LC_COLLATE=en_US.UTF-8     LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
+ [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                  LC_ADDRESS=C              
+[10] LC_TELEPHONE=C             LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+
+time zone: America/New_York
+tzcode source: system (glibc)
+
+attached base packages:
+[1] grid      stats4    stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+ [1] png_0.1-8                   celldex_1.13.3              SingleR_2.6.0              
+ [4] tidyr_1.3.1                 knitr_1.46                  stringr_1.5.1              
+ [7] mclust_6.1.1                patchwork_1.2.0             CellChat_1.6.1             
+[10] bigmemory_4.6.4             igraph_2.0.3                pheatmap_1.0.12            
+[13] Matrix_1.7-0                dplyr_1.1.4                 ggplot2_3.5.1              
+[16] shiny_1.9.1                 SeuratWrappers_0.4.0        Seurat_5.0.3               
+[19] SeuratObject_5.0.1          sp_2.1-4                    monocle3_1.3.7             
+[22] SingleCellExperiment_1.26.0 SummarizedExperiment_1.34.0 GenomicRanges_1.56.0       
+[25] GenomeInfoDb_1.40.0         IRanges_2.38.0              S4Vectors_0.42.0           
+[28] MatrixGenerics_1.16.0       matrixStats_1.3.0           Biobase_2.64.0             
+[31] BiocGenerics_0.50.0        
+
+loaded via a namespace (and not attached):
+  [1] R.methodsS3_1.8.2         paws.storage_0.5.0        urlchecker_1.0.1         
+  [4] goftest_1.2-3             HDF5Array_1.32.0          Biostrings_2.72.0        
+  [7] vctrs_0.6.5               spatstat.random_3.2-3     digest_0.6.35            
+ [10] shape_1.4.6.1             proxy_0.4-27              gypsum_1.0.0             
+ [13] registry_0.5-1            ggrepel_0.9.5             deldir_2.0-4             
+ [16] parallelly_1.37.1         magick_2.8.3              MASS_7.3-60.2            
+ [19] reshape2_1.4.4            httpuv_1.6.15             foreach_1.5.2            
+ [22] withr_3.0.0               xfun_0.43                 ggpubr_0.6.0             
+ [25] ellipsis_0.3.2            survival_3.6-4            memoise_2.0.1            
+ [28] profvis_0.3.8             systemfonts_1.0.6         ragg_1.3.0               
+ [31] zoo_1.8-12                GlobalOptions_0.1.2       pbapply_1.7-2            
+ [34] R.oo_1.26.0               KEGGREST_1.44.0           promises_1.3.0           
+ [37] httr_1.4.7                rstatix_0.7.2             rhdf5filters_1.16.0      
+ [40] globals_0.16.3            fitdistrplus_1.1-11       ps_1.7.6                 
+ [43] rhdf5_2.48.0              rstudioapi_0.16.0         UCSC.utils_1.0.0         
+ [46] miniUI_0.1.1.1            generics_0.1.3            ggalluvial_0.12.5        
+ [49] processx_3.8.4            curl_5.2.1                zlibbioc_1.50.0          
+ [52] ScaledMatrix_1.12.0       polyclip_1.10-6           GenomeInfoDbData_1.2.12  
+ [55] ExperimentHub_2.12.0      SparseArray_1.4.0         xtable_1.8-4             
+ [58] desc_1.4.3                doParallel_1.0.17         evaluate_0.23            
+ [61] S4Arrays_1.4.0            BiocFileCache_2.12.0      irlba_2.3.5.1            
+ [64] colorspace_2.1-0          filelock_1.0.3            ggnetwork_0.5.13         
+ [67] ROCR_1.0-11               reticulate_1.36.1         spatstat.data_3.0-4      
+ [70] magrittr_2.0.3            lmtest_0.9-40             later_1.3.2              
+ [73] viridis_0.6.5             lattice_0.22-6            spatstat.geom_3.2-9      
+ [76] NMF_0.28                  future.apply_1.11.2       scattermore_1.2          
+ [79] cowplot_1.1.3             RcppAnnoy_0.0.22          pillar_1.9.0             
+ [82] nlme_3.1-164              iterators_1.0.14          sna_2.7-2                
+ [85] gridBase_0.4-7            compiler_4.4.0            beachmat_2.20.0          
+ [88] RSpectra_0.16-1           stringi_1.8.3             tensor_1.5               
+ [91] minqa_1.2.6               devtools_2.4.5            plyr_1.8.9               
+ [94] crayon_1.5.2              abind_1.4-5               bit_4.0.5                
+ [97] codetools_0.2-20          textshaping_0.3.7         BiocSingular_1.20.0      
+[100] bslib_0.7.0               alabaster.ranges_1.4.0    GetoptLong_1.0.5         
+[103] plotly_4.10.4             mime_0.12                 leidenbase_0.1.35        
+[106] splines_4.4.0             paws.common_0.7.2         circlize_0.4.16          
+[109] Rcpp_1.0.12               fastDummies_1.7.3         dbplyr_2.5.0             
+[112] sparseMatrixStats_1.16.0  blob_1.2.4                utf8_1.2.4               
+[115] clue_0.3-65               BiocVersion_3.19.1        lme4_1.1-35.3            
+[118] fs_1.6.4                  listenv_0.9.1             DelayedMatrixStats_1.26.0
+[121] pkgbuild_1.4.4            ggsignif_0.6.4            tibble_3.2.1             
+[124] callr_3.7.6               svglite_2.1.3             pkgconfig_2.0.3          
+[127] network_1.18.2            tools_4.4.0               cachem_1.1.0             
+[130] RSQLite_2.3.6             viridisLite_0.4.2         DBI_1.2.2                
+[133] fastmap_1.2.0             rmarkdown_2.26            scales_1.3.0             
+[136] usethis_2.2.3             ica_1.0-3                 broom_1.0.5              
+[139] AnnotationHub_3.12.0      sass_0.4.9                coda_0.19-4.1            
+[142] FNN_1.1.4                 BiocManager_1.30.25       dotCall64_1.1-1          
+[145] carData_3.0-5             RANN_2.6.1                alabaster.schemas_1.4.0  
+[148] farver_2.1.1              yaml_2.3.8                cli_3.6.2                
+[151] purrr_1.0.2               leiden_0.4.3.1            lifecycle_1.0.4          
+[154] rsconnect_1.3.3           uwot_0.2.2                sessioninfo_1.2.2        
+[157] backports_1.4.1           BiocParallel_1.38.0       gtable_0.3.5             
+[160] rjson_0.2.21              ggridges_0.5.6            progressr_0.14.0         
+[163] parallel_4.4.0            jsonlite_1.8.8            RcppHNSW_0.6.0           
+[166] bigmemory.sri_0.1.8       bit64_4.0.5               assertthat_0.2.1         
+[169] Rtsne_0.17                alabaster.matrix_1.4.0    spatstat.utils_3.0-4     
+[172] BiocNeighbors_1.22.0      alabaster.se_1.4.0        jquerylib_0.1.4          
+[175] R.utils_2.12.3            lazyeval_0.2.2            alabaster.base_1.4.0     
+[178] htmltools_0.5.8.1         sctransform_0.4.1         rappdirs_0.3.3           
+[181] glue_1.7.0                spam_2.10-0               httr2_1.0.1              
+[184] XVector_0.44.0            gridExtra_2.3             boot_1.3-30              
+[187] R6_2.5.1                  labeling_0.4.3            cluster_2.1.6            
+[190] rngtools_1.5.2            pkgload_1.3.4             Rhdf5lib_1.26.0          
+[193] nloptr_2.0.3              statnet.common_4.9.0      DelayedArray_0.30.0      
+[196] tidyselect_1.2.1          car_3.1-2                 AnnotationDbi_1.66.0     
+[199] future_1.33.2             rsvd_1.0.5                munsell_0.5.1            
+[202] KernSmooth_2.23-22        data.table_1.15.4         htmlwidgets_1.6.4        
+[205] ComplexHeatmap_2.20.0     RColorBrewer_1.1-3        rlang_1.1.3              
+[208] spatstat.sparse_3.0-3     spatstat.explore_3.2-7    uuid_1.2-0               
+[211] remotes_2.5.0             fansi_1.0.6               Cairo_1.6-2              
